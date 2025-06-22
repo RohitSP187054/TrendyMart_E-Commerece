@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - MyMart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyMart</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" aria-label="Home">Home</a></li>
+                <li><a href="index.html#products" class="nav-link" aria-label="Products">Products</a></li>
+                <li><a href="orders.html" class="nav-link" aria-label="Orders">Orders</a></li>
+                <li><a href="profile.html" class="nav-link" aria-label="Profile">Profile</a></li>
+                <li><a href="cart.html" class="nav-link" aria-label="Cart">Cart</a></li>
+                <li><a href="index.html#contact" class="nav-link" aria-label="Contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon" aria-label="Cart">
+                <a href="cart.html"><span>🛒</span></a>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="menu-toggle" aria-label="Toggle menu">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="orders">
+            <h2>Your Orders</h2>
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MyMart</h3>
+                <p>Your trusted online store for fashion, electronics, and more.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#privacy" class="modal-link" data-modal="privacy-modal" aria-label="Privacy policy">Privacy Policy</a>
+                    <a href="#terms" class="modal-link" data-modal="terms-modal" aria-label="Terms and conditions">Terms and Conditions</a>
+                    <a href="#faq" class="modal-link" data-modal="faq-modal" aria-label="FAQ">FAQ</a>
+                    <a href="index.html#contact" class="nav-link" aria-label="Contact us">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: <a href="mailto:support@mymart.com">support@mymart.com</a></p>
+                <p>Phone: (123) 000-7890</p>
+                <p>Address: Jai Bhawani Nagar, N-4, Cidco, Chh. Sambhaji Nagar, MH-431001, India</p>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 RSP. All rights reserved.</p>
+    </footer>
+
+    <div class="modal privacy-modal" aria-label="Privacy policy modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2>Privacy Policy</h2>
+            <p>At MyMart, we value your privacy. We collect personal information such as name, email, and payment details only to process orders and improve your shopping experience.</p>
+        </div>
+    </div>
+    <div class="modal terms-modal" aria-label="Terms and conditions modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2>Terms and Conditions</h2>
+            <p>By using MyMart, you agree to our terms. All products are sold subject to availability. Prices are subject to change without notice. Returns are accepted within 30 days with proof of purchase.</p>
+        </div>
+    </div>
+    <div class="modal faq-modal" aria-label="FAQ modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2>FAQ</h2>
+            <p><strong>How do I track my order?</strong> You’ll receive a tracking number via email once your order ships.<br>
+            <strong>What is your return policy?</strong> Returns are accepted within 30 days in original condition.<br>
+            <strong>Do you ship internationally?</strong> Yes, we ship to over 50 countries.</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
